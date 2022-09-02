@@ -1,0 +1,36 @@
+    1  su
+    2  sudo apt install git
+    3  brew install gnupg
+    4  clear
+    5  sudo apt install gnupg
+    6  gpg --full-generate-key
+    7  gpu --output my_revocation_certificate.asc -- gen.revoke <58969A1ECA635FDD>
+    8  gpu --output my_revocation_certificate.asc --gen-revoke <58969A1ECA635FDD>
+    9  gpg --output my_revocation_certificate.asc --gen-revoke <58969A1ECA635FDD>
+   10  gpg --output my_revocation_certificate.asc --gen-revoke 58969A1ECA635FDDS
+   11  gpg --output my_revocation_certificate.asc --gen-revoke 58969A1ECA635FDD
+   12  gpg --list-keys
+   13  gpg --list-secret-keys
+   14  gpg --output nextor.gpg --export naldana@uca.edu.sv
+   15  gpg --output nextor.gpg --export 00100719@uca.edu.sv
+   16  gpg --armor --export 00100719@uca.edu.sv
+   17  nano kevin.asc
+   18  nano nestor.asc
+   19  gpg --list-keys
+   20  gpg --output nextor.gpg --export naldana@uca.edu.sv
+   21  gpg --armor --export naldana@uca.edu.sv
+   22  gpg --export-secret-keys --armor 00100719@uca.edu.sv  > ./kevin.asc
+   23  nano miguel.asc
+   24  gpg --list-keys
+   25  gpg --import ~/miguel.gpg 
+   26  gpg --import miguel.gpg 
+   27  gpg --import ~/Downloads/miguel.gpg 
+   28  gpg --import /miguel.gpg 
+   29  gpg --import miguel.gpg 
+   30  gpg --import miguel.asc 
+   31  gpg --import nestor.asc
+   32  gpg --list-keys
+   33  gpg --edit-key 00087518@uca.edu.sv
+   34  gpg --edit-key naldana@uca.edu.sv
+   35  gpg --list-keys
+   36  history > history.txt
